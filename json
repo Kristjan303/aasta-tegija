@@ -4,7 +4,7 @@ import requests
 import json
 
 #vaatab veebilehe sisu
-link = "http://192.168.22.172/menu-example/"
+link = "https://siseveeb.voco.ee/veebivormid/sookla_menuu"
 sisu = requests.get(link).text
 doc = BeautifulSoup(sisu, "html.parser")
 menüü = doc.find_all("div", {"class": "panel panel-default"})
