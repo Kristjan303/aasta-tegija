@@ -35,6 +35,6 @@ with open(faili_nimi) as fh:
         dict1[command] = description.strip()
 
 #fail kus on json fail
-out_file = open("test1.json", "w")
+out_file = open("söökla_menüü.json", "w")
 json.dump(dict1, out_file, indent=4, sort_keys=False)
 out_file.close()
